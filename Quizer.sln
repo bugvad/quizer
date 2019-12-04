@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quizer", "Quizer\Quizer.csproj", "{4E36A79E-E7E4-4135-B82F-182001F7F2EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lib", "Lib\Lib.csproj", "{80DC9AC0-FEA6-4690-B783-A306AB6E2D34}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4E36A79E-E7E4-4135-B82F-182001F7F2EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E36A79E-E7E4-4135-B82F-182001F7F2EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E36A79E-E7E4-4135-B82F-182001F7F2EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80DC9AC0-FEA6-4690-B783-A306AB6E2D34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80DC9AC0-FEA6-4690-B783-A306AB6E2D34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80DC9AC0-FEA6-4690-B783-A306AB6E2D34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80DC9AC0-FEA6-4690-B783-A306AB6E2D34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

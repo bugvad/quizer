@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="760*"/>
+            <ColumnDefinition Width="33*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button Margin="50" Click="SignInButton_Click">Sign in</Button>
+            <Button Margin="50" Click="SignUpButton_Click">Sign up</Button>
+        </StackPanel>
     </Grid>
 </Window>
