@@ -20,19 +20,19 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <TextBlock Margin="5" Text="Login"/>
-        <TextBox Margin="5" Name="textBoxName" Grid.Column="1"></TextBox>
+        <TextBox Margin="5" Name="textBoxLogin" Grid.Column="1"></TextBox>
 
         <TextBlock Margin="5" Grid.Row="1" Text="Full name"/>
-        <TextBox Margin="5" Name="textBoxCarPlateNumber" Grid.Row="1" Grid.Column="1"></TextBox>
+        <TextBox Margin="5" Name="textBoxFullName" Grid.Row="1" Grid.Column="1"></TextBox>
 
         <TextBlock Margin="5" Grid.Row="2" Text="University"/>
-        <TextBox Margin="5" Name="textBoxPhone" Grid.Row="2" Grid.Column="1"></TextBox>
+        <TextBox Margin="5" Name="textBoxUniversity" Grid.Row="2" Grid.Column="1"></TextBox>
 
         <TextBlock Margin="5" Grid.Row="3" Text="Group"/>
-        <TextBox Margin="5" Name="textBoxPassword" Grid.Row="3" Grid.Column="1"></TextBox>
+        <TextBox Margin="5" Name="textBoxGroup" Grid.Row="3" Grid.Column="1"></TextBox>
 
         <TextBlock Margin="5" Grid.Row="4"><Run Text="Password"/><LineBreak/><Run Text=""/></TextBlock>
-        <TextBox Margin="5" Name="textBoxPasswor" Grid.Row="4" Grid.Column="1"></TextBox>
+        <TextBox Margin="5" Name="textBoxPassword" Grid.Row="4" Grid.Column="1"></TextBox>
 
         <StackPanel Grid.Row="5" Grid.ColumnSpan="2" Orientation="Horizontal"
                     VerticalAlignment="Top" HorizontalAlignment="Center">

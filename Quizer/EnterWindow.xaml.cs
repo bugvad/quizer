@@ -22,14 +22,20 @@ namespace Quizer
     {
         private TeacherManager manager;
 
-        public EnterWindow()
-        {
-            InitializeComponent();
-        }
-
         public EnterWindow(TeacherManager manager)
         {
             this.manager = manager;
+            InitializeComponent();
+        }
+
+        private void OkButtonClick(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CancelButtonClick(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

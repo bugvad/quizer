@@ -22,14 +22,35 @@ namespace Quizer
     {
         private TeacherManager manager;
 
-        public RegisterWindow()
-        {
-            InitializeComponent();
-        }
-
         public RegisterWindow(TeacherManager manager)
         {
             this.manager = manager;
+            InitializeComponent();
+        }
+
+        private void OkButtonClick(object sender, RoutedEventArgs e)
+        {
+            if (textBoxLogin.Text == "" | textBoxFullName.Text == "" | textBoxUniversity.Text == "" | textBoxGroup.Text == "" | textBoxPassword.Text == "")
+            {
+                MessageBox.Show("Please fill all gaps");
+            }
+            else
+            {
+                if (manager.CheckIfUserExists(textBoxLogin.Text))
+                {
+                    MessageBox.Show("User with this login is already exists");
+                }
+                else
+                {
+                    manager.RegisterUser(textBoxLogin.Text, textBoxFullName.Text, textBoxUniversity.Text, textBoxGroup.Text, textBoxPassword.Text);
+                    //window.ShowDialog();
+                }
+            }
+        }
+
+        private void CancelButtonClick(object sender, RoutedEventArgs e)
+        {
+            DialogResult = false;
         }
     }
 }
