@@ -16,8 +16,8 @@
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <TextBlock Margin="5">Phone</TextBlock>
-        <TextBox Margin="5" Name="textBoxPhone" Grid.Column="1"></TextBox>
+        <TextBlock Margin="5">Login</TextBlock>
+        <TextBox Margin="5" Name="textBoxLogin" Grid.Column="1"></TextBox>
         <TextBlock Margin="5" Grid.Row="1">Password</TextBlock>
         <TextBox Margin="5" Name="textBoxPassword" Grid.Row="1" Grid.Column="1"></TextBox>
         <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Orientation="Horizontal"

@@ -9,7 +9,21 @@ namespace Lib
 {
     public class TeacherManager
     {
-        private List<User> users;
+        List<User> users = new List<User> { };
+
+        public TeacherManager()
+        {
+            var session = new User
+            {
+                Login = "login",
+                Fullname = "vadim",
+                University = "hse",
+                Group = "bbi186",
+                Password = "123"
+            };
+
+            users.Add(session);
+        }
 
         public bool CheckIfUserExists(string login)
         {
@@ -37,6 +51,17 @@ namespace Lib
             users.Add(user);
         }
 
-
+        public bool CheckPassword(string login, string password)
+        {
+            //textBoxPassword.Text
+            for (int i = 0; i < users.Count; i++)
+            {
+                if (users[i].Login == login & users[i].Password == password)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }

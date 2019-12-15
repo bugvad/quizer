@@ -1,5 +1,4 @@
-﻿using Lib;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,31 +10,33 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Lib;
 
 namespace Quizer
 {
-    
-    public partial class MainWindow : Window
+    /// <summary>
+    /// Логика взаимодействия для RegisterChooseWindow.xaml
+    /// </summary>
+    public partial class RegisterChooseWindow : Window
     {
         TeacherManager manager = new TeacherManager();
 
-        public MainWindow()
+        public RegisterChooseWindow(TeacherManager manager)
         {
+            this.manager = manager;
             InitializeComponent();
         }
 
-        private void SignInButton_Click(object sender, RoutedEventArgs e)
+        private void StudentButton_Click(object sender, RoutedEventArgs e)
         {
-            var window = new EnterWindow(manager);
+            var window = new RegisterWindow(manager);
             window.ShowDialog();
         }
 
-        private void SignUpButton_Click(object sender, RoutedEventArgs e)
+        private void TeacherButton_Click(object sender, RoutedEventArgs e)
         {
-            var window = new RegisterChooseWindow(manager);
-            window.ShowDialog();
+           
         }
     }
 }

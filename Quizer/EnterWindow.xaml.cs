@@ -30,12 +30,34 @@ namespace Quizer
 
         private void OkButtonClick(object sender, RoutedEventArgs e)
         {
-
+            if (textBoxLogin.Text == "" | textBoxPassword.Text == "")
+            {
+                MessageBox.Show("Please fill all gaps");
+            }
+            else
+            {
+                if (manager.CheckIfUserExists(textBoxLogin.Text))
+                {
+                    if (manager.CheckPassword(textBoxLogin.Text, textBoxPassword.Text))
+                    {
+                        var window = new EnterWindow(manager);
+                        window.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Wrong password");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("User with this login don't exist");
+                }
+            }
         }
 
         private void CancelButtonClick(object sender, RoutedEventArgs e)
         {
-
+            DialogResult = false;
         }
     }
 }
